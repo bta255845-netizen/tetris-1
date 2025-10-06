@@ -1,0 +1,1368 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1251">
+	<TITLE>Портрет на фоне книжной полки&hellip;</TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice 4.1.11  (Win32)">
+	<META NAME="AUTHOR" CONTENT="User">
+	<META NAME="CREATED" CONTENT="20160506;13470000">
+	<META NAME="CHANGEDBY" CONTENT="Татьяна ">
+	<META NAME="CHANGED" CONTENT="20251006;16002510">
+	<META NAME="AppVersion" CONTENT="12.0000">
+	<META NAME="Company" CONTENT="MoBIL GROUP">
+	<META NAME="DocSecurity" CONTENT="0">
+	<META NAME="HyperlinksChanged" CONTENT="false">
+	<META NAME="LinksUpToDate" CONTENT="false">
+	<META NAME="ScaleCrop" CONTENT="false">
+	<META NAME="ShareDoc" CONTENT="false">
+	<STYLE TYPE="text/css">
+	<!--
+		@page { size: 21cm 29.7cm; margin-left: 1.57cm; margin-right: 1.15cm; margin-top: 1.02cm; margin-bottom: 1.28cm }
+		P { margin-bottom: 0.21cm; direction: ltr; color: #000000; widows: 2; orphans: 2 }
+		P.western { font-family: "Times New Roman", serif; font-size: 12pt; so-language: ru-RU }
+		P.cjk { font-family: "Times New Roman", serif; font-size: 12pt; so-language: ru-RU }
+		P.ctl { font-family: "Times New Roman", serif; font-size: 12pt; so-language: ar-SA }
+		A:link { color: #0000ff; so-language: zxx; text-decoration: underline }
+		A:visited { color: #800080; text-decoration: underline }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="ru-RU" TEXT="#000000" LINK="#0000ff" VLINK="#800080" DIR="LTR">
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent">Код
+для тетриса</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent">```html</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent">&lt;!DOCTYPE
+html&gt;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent">&lt;html
+lang=&quot;en&quot;&gt;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent">&lt;head&gt;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">    <FONT FACE="Times New Roman, serif"><FONT SIZE=3>&lt;meta
+charset=&quot;UTF-8&quot;&gt;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">    <FONT FACE="Times New Roman, serif"><FONT SIZE=3>&lt;meta
+name=&quot;viewport&quot; content=&quot;width=device-width,
+initial-scale=1.0&quot;&gt;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">    <FONT FACE="Times New Roman, serif"><FONT SIZE=3>&lt;title&gt;Тетрис&lt;/title&gt;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">    <FONT FACE="Times New Roman, serif"><FONT SIZE=3>&lt;style&gt;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>body
+{</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>background:
+#111;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>display:
+flex;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>justify-content:
+center;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>align-items:
+center;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>height:
+100vh;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>margin:
+0;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>font-family:
+'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>color:
+white;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>overflow:
+hidden;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>.game-container
+{</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>display:
+flex;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>gap:
+20px;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>#game-board
+{</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>border:
+2px solid #444;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>background:
+#000;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>.side-panel
+{</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>display:
+flex;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>flex-direction:
+column;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>justify-content:
+space-between;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>gap:
+20px;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>.info-box
+{</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>background:
+#222;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>padding:
+15px;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>border-radius:
+8px;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>min-width:
+120px;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>.next-piece
+{</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>display:
+grid;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">           
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>grid-template-columns:
+repeat(4, 15px);</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>grid-template-rows:
+repeat(4, 15px);</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>grid-gap:
+2px;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>margin-top:
+10px;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>.next-piece
+div {</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>width:
+15px;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>height:
+15px;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>background:
+#333;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>.controls
+{</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>background:
+#222;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>padding:
+15px;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>border-radius:
+8px;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>button
+{</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>background:
+#444;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>color:
+white;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>border:
+none;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>padding:
+8px 12px;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>margin-top:
+10px;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>border-radius:
+4px;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>cursor:
+pointer;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>width:
+100%;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>button:hover
+{</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>background:
+#555;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>h2
+{</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>margin:
+0 0 10px 0;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>font-size:
+18px;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>.score,
+.level, .lines {</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>font-size:
+16px;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>margin:
+5px 0;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>.game-over
+{</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>position:
+absolute;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>top:
+50%;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>left:
+50%;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>transform:
+translate(-50%, -50%);</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>background:
+rgba(0,0,0,0.8);</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>padding:
+20px;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>border-radius:
+10px;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>text-align:
+center;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>display:
+none;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>z-index:
+10;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">    <FONT FACE="Times New Roman, serif"><FONT SIZE=3>&lt;/style&gt;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent">&lt;/head&gt;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent">&lt;body&gt;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">    <FONT FACE="Times New Roman, serif"><FONT SIZE=3>&lt;div
+class=&quot;game-container&quot;&gt;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>&lt;canvas
+id=&quot;game-board&quot; width=&quot;200&quot;
+height=&quot;400&quot;&gt;&lt;/canvas&gt;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>&lt;div
+class=&quot;side-panel&quot;&gt;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>&lt;div
+class=&quot;info-box&quot;&gt;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                <FONT FACE="Times New Roman, serif"><FONT SIZE=3>&lt;h2&gt;Следующая
+фигура&lt;/h2&gt;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                <FONT FACE="Times New Roman, serif"><FONT SIZE=3>&lt;div
+class=&quot;next-piece&quot; id=&quot;next-piece&quot;&gt;&lt;/div&gt;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                <FONT FACE="Times New Roman, serif"><FONT SIZE=3>&lt;div
+class=&quot;score&quot;&gt;Счёт: &lt;span id=&quot;score&quot;&gt;0&lt;/span&gt;&lt;/div&gt;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                <FONT FACE="Times New Roman, serif"><FONT SIZE=3>&lt;div
+class=&quot;level&quot;&gt;Уровень: &lt;span
+id=&quot;level&quot;&gt;1&lt;/span&gt;&lt;/div&gt;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                <FONT FACE="Times New Roman, serif"><FONT SIZE=3>&lt;div
+class=&quot;lines&quot;&gt;Линии: &lt;span id=&quot;lines&quot;&gt;0&lt;/span&gt;&lt;/div&gt;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>&lt;/div&gt;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>&lt;div
+class=&quot;controls&quot;&gt;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">               
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>&lt;h2&gt;Управление&lt;/h2&gt;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                <FONT FACE="Times New Roman, serif"><FONT SIZE=3>&lt;p&gt;&larr;
+&rarr; : Движение&lt;/p&gt;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                <FONT FACE="Times New Roman, serif"><FONT SIZE=3>&lt;p&gt;&uarr;
+: Поворот&lt;/p&gt;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                <FONT FACE="Times New Roman, serif"><FONT SIZE=3>&lt;p&gt;&darr;
+: Ускорение&lt;/p&gt;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                <FONT FACE="Times New Roman, serif"><FONT SIZE=3>&lt;p&gt;Пробел
+: Падение&lt;/p&gt;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                <FONT FACE="Times New Roman, serif"><FONT SIZE=3>&lt;button
+id=&quot;start-btn&quot;&gt;Начать&lt;/button&gt;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                <FONT FACE="Times New Roman, serif"><FONT SIZE=3>&lt;button
+id=&quot;pause-btn&quot;&gt;Пауза&lt;/button&gt;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>&lt;/div&gt;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>&lt;/div&gt;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">    <FONT FACE="Times New Roman, serif"><FONT SIZE=3>&lt;/div&gt;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">    <FONT FACE="Times New Roman, serif"><FONT SIZE=3>&lt;div
+class=&quot;game-over&quot; id=&quot;game-over&quot;&gt;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>&lt;h2&gt;Игра
+окончена!&lt;/h2&gt;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>&lt;p&gt;Ваш
+счёт: &lt;span id=&quot;final-score&quot;&gt;0&lt;/span&gt;&lt;/p&gt;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>&lt;button
+id=&quot;restart-btn&quot;&gt;Начать заново&lt;/button&gt;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">    <FONT FACE="Times New Roman, serif"><FONT SIZE=3>&lt;/div&gt;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">    <FONT FACE="Times New Roman, serif"><FONT SIZE=3>&lt;script&gt;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>//
+Настройки игры</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>const
+COLS = 10;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>const
+ROWS = 20;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>const
+BLOCK_SIZE = 20;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>const
+COLORS = [</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>null,</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>'#FF0D72',
+// I</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>'#0DC2FF',
+// J</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>'#0DFF72',
+// L</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>'#F538FF',
+// O</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>'#FF8E0D',
+// S</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>'#FFE138',
+// T</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>'#3877FF'
+ // Z</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>];</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>//
+Фигуры тетриса (глубокие копии)</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>const
+SHAPES = [</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>[],</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>[[0,0,0,0],
+[1,1,1,1], [0,0,0,0], [0,0,0,0]], // I</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>[[2,0,0],
+[2,2,2], [0,0,0]],                   // J</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>[[0,0,3],
+[3,3,3], [0,0,0]],                   // L</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>[[4,4],
+[4,4]],                                // O</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>[[0,5,5],
+[5,5,0], [0,0,0]],                   // S</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>[[0,6,0],
+[6,6,6], [0,0,0]],                   // T</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>[[7,7,0],
+[0,7,7], [0,0,0]]                    // Z</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>];</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>//
+Игровое состояние</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>let
+canvas, ctx;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>let
+board = [];</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>let
+currentPiece = null;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>let
+nextPiece = null;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>let
+score = 0;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>let
+level = 1;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>let
+lines = 0;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>let
+gameOver = false;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>let
+isPaused = false;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>let
+dropCounter = 0;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>let
+dropInterval = 1000;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>let
+lastTime = 0;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>let
+animationId = null;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>//
+Глубокое копирование массива</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>function
+deepCopy(obj) {</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>return
+JSON.parse(JSON.stringify(obj));</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>//
+Инициализация игры</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>function
+init() {</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>canvas
+= document.getElementById('game-board');</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>ctx
+= canvas.getContext('2d');</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            </SPAN>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>resetGame();</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">           
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>createNextPieceDisplay();</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            </SPAN>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">           
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>document.getElementById('start-btn').addEventListener('click',
+startGame);</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">           
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>document.getElementById('pause-btn').addEventListener('click',
+togglePause);</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">           
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>document.getElementById('restart-btn').addEventListener('click',
+resetGame);</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            </SPAN>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">           
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>document.addEventListener('keydown',
+handleKeyPress);</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>function
+resetGame() {</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>board
+= Array.from({ length: ROWS }, () =&gt; Array(COLS).fill(0));</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>score
+= 0;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>level
+= 1;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>lines
+= 0;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>gameOver
+= false;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>isPaused
+= false;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>dropInterval
+= 1000;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            </SPAN>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>updateUI();</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">           
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>document.getElementById('game-over').style.display
+= 'none';</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            </SPAN>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>currentPiece
+= createPiece();</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>nextPiece
+= createPiece();</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">           
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>updateNextPieceDisplay();</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            </SPAN>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>if
+(animationId) {</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">               
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>cancelAnimationFrame(animationId);</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                <FONT FACE="Times New Roman, serif"><FONT SIZE=3>animationId
+= null;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>function
+startGame() {</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>if
+(gameOver) resetGame();</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>isPaused
+= false;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>if
+(!animationId) {</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                <FONT FACE="Times New Roman, serif"><FONT SIZE=3>lastTime
+= performance.now();</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                <FONT FACE="Times New Roman, serif"><FONT SIZE=3>animationId
+= requestAnimationFrame(gameLoop);</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>function
+togglePause() {</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>if
+(!gameOver) {</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                <FONT FACE="Times New Roman, serif"><FONT SIZE=3>isPaused
+= !isPaused;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                <FONT FACE="Times New Roman, serif"><FONT SIZE=3>if
+(!isPaused &amp;&amp; !animationId) {</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                    <FONT FACE="Times New Roman, serif"><FONT SIZE=3>lastTime
+= performance.now();</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                    <FONT FACE="Times New Roman, serif"><FONT SIZE=3>animationId
+= requestAnimationFrame(gameLoop);</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>function
+createPiece() {</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>const
+rand = Math.floor(Math.random() * 7) + 1;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>return
+{</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                <FONT FACE="Times New Roman, serif"><FONT SIZE=3>shape:
+deepCopy(SHAPES[rand]),</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                <FONT FACE="Times New Roman, serif"><FONT SIZE=3>color:
+rand,</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                <FONT FACE="Times New Roman, serif"><FONT SIZE=3>pos:
+{ x: Math.floor(COLS / 2) - Math.floor(SHAPES[rand][0].length / 2),
+y: 0 }</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>};</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>function
+createNextPieceDisplay() {</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>const
+nextPieceEl = document.getElementById('next-piece');</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">           
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>nextPieceEl.innerHTML
+= '';</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>for
+(let i = 0; i &lt; 16; i++) {</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                <FONT FACE="Times New Roman, serif"><FONT SIZE=3>const
+block = document.createElement('div');</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">               
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>nextPieceEl.appendChild(block);</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>function
+updateNextPieceDisplay() {</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>const
+nextPieceEl = document.getElementById('next-piece');</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>const
+blocks = nextPieceEl.querySelectorAll('div');</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            </SPAN>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">           
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>blocks.forEach(block
+=&gt; block.style.backgroundColor = '#333');</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            </SPAN>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>const
+shape = nextPiece.shape;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>for
+(let y = 0; y &lt; shape.length; y++) {</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                <FONT FACE="Times New Roman, serif"><FONT SIZE=3>for
+(let x = 0; x &lt; shape[y].length; x++) {</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                    <FONT FACE="Times New Roman, serif"><FONT SIZE=3>if
+(shape[y][x]) {</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>const
+index = y * 4 + x;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>if
+(index &lt; blocks.length) {</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                           
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>blocks[index].style.backgroundColor
+= COLORS[nextPiece.color];</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                    <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>function
+draw() {</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>//
+Очистка холста</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>ctx.fillStyle
+= '#000';</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>ctx.fillRect(0,
+0, canvas.width, canvas.height);</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            </SPAN>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>//
+Отрисовка доски</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>for
+(let y = 0; y &lt; ROWS; y++) {</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                <FONT FACE="Times New Roman, serif"><FONT SIZE=3>for
+(let x = 0; x &lt; COLS; x++) {</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                    <FONT FACE="Times New Roman, serif"><FONT SIZE=3>if
+(board[y][x]) {</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                       
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>ctx.fillStyle =
+COLORS[board[y][x]];</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                       
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>ctx.fillRect(x *
+BLOCK_SIZE, y * BLOCK_SIZE, BLOCK_SIZE, BLOCK_SIZE);</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                       
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>ctx.strokeStyle =
+'#000';</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                       
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>ctx.strokeRect(x *
+BLOCK_SIZE, y * BLOCK_SIZE, BLOCK_SIZE, BLOCK_SIZE);</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                    <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            </SPAN>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>//
+Отрисовка текущей фигуры</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>if
+(currentPiece) {</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                <FONT FACE="Times New Roman, serif"><FONT SIZE=3>const
+shape = currentPiece.shape;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                <FONT FACE="Times New Roman, serif"><FONT SIZE=3>ctx.fillStyle
+= COLORS[currentPiece.color];</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                <FONT FACE="Times New Roman, serif"><FONT SIZE=3>for
+(let y = 0; y &lt; shape.length; y++) {</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                    <FONT FACE="Times New Roman, serif"><FONT SIZE=3>for
+(let x = 0; x &lt; shape[y].length; x++) {</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>if
+(shape[y][x]) {</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                           
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>ctx.fillRect(</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                               
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>(currentPiece.pos.x
++ x) * BLOCK_SIZE,</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                               
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>(currentPiece.pos.y
++ y) * BLOCK_SIZE,</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                               
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>BLOCK_SIZE,
+BLOCK_SIZE</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>);</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                           
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>ctx.strokeStyle =
+'#000';</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                           
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>ctx.strokeRect(</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                               
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>(currentPiece.pos.x
++ x) * BLOCK_SIZE,</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                               
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>(currentPiece.pos.y
++ y) * BLOCK_SIZE,</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                               
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>BLOCK_SIZE,
+BLOCK_SIZE</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>);</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                    <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>function
+gameLoop(time = 0) {</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>if
+(gameOver || isPaused) {</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                <FONT FACE="Times New Roman, serif"><FONT SIZE=3>animationId
+= null;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                <FONT FACE="Times New Roman, serif"><FONT SIZE=3>return;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            </SPAN>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>const
+deltaTime = time - lastTime;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>lastTime
+= time;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>dropCounter
++= deltaTime;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            </SPAN>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>if
+(dropCounter &gt; dropInterval) {</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                <FONT FACE="Times New Roman, serif"><FONT SIZE=3>dropPiece();</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            </SPAN>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>draw();</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>animationId
+= requestAnimationFrame(gameLoop);</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>function
+dropPiece() {</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">           
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>currentPiece.pos.y++;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>if
+(checkCollision()) {</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">               
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>currentPiece.pos.y--;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                <FONT FACE="Times New Roman, serif"><FONT SIZE=3>mergePiece();</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                <FONT FACE="Times New Roman, serif"><FONT SIZE=3>clearLines();</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                <FONT FACE="Times New Roman, serif"><FONT SIZE=3>currentPiece
+= nextPiece;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                <FONT FACE="Times New Roman, serif"><FONT SIZE=3>nextPiece
+= createPiece();</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">               
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>updateNextPieceDisplay();</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                </SPAN>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                <FONT FACE="Times New Roman, serif"><FONT SIZE=3>if
+(checkCollision()) {</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                    <FONT FACE="Times New Roman, serif"><FONT SIZE=3>gameOver
+= true;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                   
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>document.getElementById('final-score').textContent
+= score;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                   
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>document.getElementById('game-over').style.display
+= 'block';</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                    <FONT FACE="Times New Roman, serif"><FONT SIZE=3>animationId
+= null;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>dropCounter
+= 0;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>function
+hardDrop() {</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>while
+(!checkCollision()) {</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">               
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>currentPiece.pos.y++;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">           
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>currentPiece.pos.y--;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>dropPiece();</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>function
+rotatePiece() {</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>const
+originalShape = deepCopy(currentPiece.shape);</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>const
+rows = originalShape.length;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>const
+cols = originalShape[0].length;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            </SPAN>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>const
+rotated = Array.from({ length: cols }, () =&gt; Array(rows).fill(0));</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            </SPAN>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>for
+(let y = 0; y &lt; rows; y++) {</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                <FONT FACE="Times New Roman, serif"><FONT SIZE=3>for
+(let x = 0; x &lt; cols; x++) {</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                   
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>rotated[x][rows - 1
+- y] = originalShape[y][x];</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            </SPAN>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>currentPiece.shape
+= rotated;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            </SPAN>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>if
+(checkCollision()) {</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">               
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>currentPiece.shape =
+originalShape;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>function
+movePiece(dir) {</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>currentPiece.pos.x
++= dir;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>if
+(checkCollision()) {</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">               
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>currentPiece.pos.x
+-= dir;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>function
+checkCollision() {</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>const
+shape = currentPiece.shape;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>for
+(let y = 0; y &lt; shape.length; y++) {</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                <FONT FACE="Times New Roman, serif"><FONT SIZE=3>for
+(let x = 0; x &lt; shape[y].length; x++) {</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                    <FONT FACE="Times New Roman, serif"><FONT SIZE=3>if
+(shape[y][x] !== 0) {</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>const
+boardX = currentPiece.pos.x + x;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>const
+boardY = currentPiece.pos.y + y;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                        </SPAN>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>if
+(</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                           
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>boardX &lt; 0 || </SPAN></FONT></FONT>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                           
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>boardX &gt;= COLS ||
+</SPAN></FONT></FONT>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                           
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>boardY &gt;= ROWS ||</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                           
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>(boardY &gt;= 0 &amp;&amp;
+board[boardY][boardX] !== 0)</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>)
+{</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                           
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>return true;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                    <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>return
+false;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>function
+mergePiece() {</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>const
+shape = currentPiece.shape;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>for
+(let y = 0; y &lt; shape.length; y++) {</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                <FONT FACE="Times New Roman, serif"><FONT SIZE=3>for
+(let x = 0; x &lt; shape[y].length; x++) {</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                    <FONT FACE="Times New Roman, serif"><FONT SIZE=3>if
+(shape[y][x] !== 0) {</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>const
+boardY = currentPiece.pos.y + y;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>const
+boardX = currentPiece.pos.x + x;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>if
+(boardY &gt;= 0) {</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                           
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>board[boardY][boardX]
+= currentPiece.color;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                    <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>function
+clearLines() {</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>let
+linesCleared = 0;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>let
+y = ROWS - 1;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>while
+(y &gt;= 0) {</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                <FONT FACE="Times New Roman, serif"><FONT SIZE=3>if
+(board[y].every(value =&gt; value !== 0)) {</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                   
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>board.splice(y, 1);</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                   
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>board.unshift(Array(COLS).fill(0));</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                   
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>linesCleared++;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}
+else {</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                    <FONT FACE="Times New Roman, serif"><FONT SIZE=3>y--;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            </SPAN>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>if
+(linesCleared &gt; 0) {</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                <FONT FACE="Times New Roman, serif"><FONT SIZE=3>const
+points = [0, 40, 100, 300, 1200];</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                <FONT FACE="Times New Roman, serif"><FONT SIZE=3>score
++= points[linesCleared] * level;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                <FONT FACE="Times New Roman, serif"><FONT SIZE=3>lines
++= linesCleared;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                <FONT FACE="Times New Roman, serif"><FONT SIZE=3>level
+= Math.floor(lines / 10) + 1;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                <FONT FACE="Times New Roman, serif"><FONT SIZE=3>dropInterval
+= Math.max(100, 1000 - (level - 1) * 100);</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                <FONT FACE="Times New Roman, serif"><FONT SIZE=3>updateUI();</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>function
+updateUI() {</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">           
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>document.getElementById('score').textContent
+= score;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">           
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>document.getElementById('level').textContent
+= level;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">           
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>document.getElementById('lines').textContent
+= lines;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>function
+handleKeyPress(e) {</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>if
+(gameOver || isPaused || !currentPiece) return;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            </SPAN>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>switch(e.keyCode)
+{</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                <FONT FACE="Times New Roman, serif"><FONT SIZE=3>case
+37: // Стрелка влево</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                   
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>movePiece(-1);</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                    <FONT FACE="Times New Roman, serif"><FONT SIZE=3>break;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                <FONT FACE="Times New Roman, serif"><FONT SIZE=3>case
+39: // Стрелка вправо</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                   
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>movePiece(1);</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                    <FONT FACE="Times New Roman, serif"><FONT SIZE=3>break;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                <FONT FACE="Times New Roman, serif"><FONT SIZE=3>case
+40: // Стрелка вниз</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                   
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>dropPiece();</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                    <FONT FACE="Times New Roman, serif"><FONT SIZE=3>break;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                <FONT FACE="Times New Roman, serif"><FONT SIZE=3>case
+38: // Стрелка вверх</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                   
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>rotatePiece();</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                    <FONT FACE="Times New Roman, serif"><FONT SIZE=3>break;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                <FONT FACE="Times New Roman, serif"><FONT SIZE=3>case
+32: // Пробел</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                    <FONT FACE="Times New Roman, serif"><FONT SIZE=3>hardDrop();</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">                    <FONT FACE="Times New Roman, serif"><FONT SIZE=3>break;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">            <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">        <FONT FACE="Times New Roman, serif"><FONT SIZE=3>}</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">       
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>window.addEventListener('load',
+init);</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<SPAN STYLE="background: transparent">    <FONT FACE="Times New Roman, serif"><FONT SIZE=3>&lt;/script&gt;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent">&lt;/body&gt;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent">&lt;/html&gt;</SPAN></FONT></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="text-indent: 1.02cm; margin-bottom: 0cm; font-style: normal; font-weight: normal; widows: 2; orphans: 2">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent">```</SPAN></FONT></FONT></P>
+</BODY>
+</HTML>
